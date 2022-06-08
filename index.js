@@ -5,8 +5,9 @@ const mongoURL = "mongodb://localhost:27017/gafashop"
 
 //when running on android  we need to specify that it can be  accessed from anywhere
 
-const PORT = 400
+const PORT = 4000
 const app = express();
+app.use(express.json())
 
 app.use(authRoute)
 
